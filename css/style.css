@@ -1,0 +1,424 @@
+body,
+h1,
+h2,
+ul,
+li,
+a {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #151d3a;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 80px minmax(300px, 1200px) 1fr;
+}
+
+.menu {
+  grid-column: 3 / 5;
+  z-index: 2;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: #f5c153;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-items: center;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  margin-right: 10px;
+  color: #151d3a;
+  font-family: "Cardo", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.creatures {
+  grid-column: 2 / 4;
+  z-index: 2;
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 50px 300px 1fr;
+  padding: 10px;
+  grid-gap: 20px;
+  margin-bottom: 4rem;
+}
+
+.creatures p {
+  font-family: "Cardo", serif;
+  z-index: 2;
+  line-height: 1.3;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  font-size: 1.2rem;
+}
+
+.title,
+.title-2 {
+  font-family: "Cinzel", serif;
+  z-index: 2;
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: normal;
+  grid-column: 1 / 4;
+}
+
+.title-2 {
+  font-size: 2rem;
+  z-index: 2;
+  margin-left: 340px;
+  margin-bottom: 40px;
+}
+
+.creatures-description h2 {
+  font-family: "Cinzel", serif;
+  z-index: 2;
+  letter-spacing: 0.1em;
+  color: #f5c153;
+}
+
+.creatures-description h2::before {
+  content: "";
+  z-index: 2;
+  display: inline-block;
+  width: 40px;
+  height: 10px;
+  background: #775353;
+  margin-right: 10px;
+}
+
+.creatures-list {
+  height: 370px;
+  overflow-y: scroll;
+  grid-column: 2;
+}
+
+.creatures-list li {
+  cursor: pointer;
+}
+
+.creatures-list::-webkit-scrollbar {
+  width: 20px;
+}
+
+.creatures-list::-webkit-scrollbar-thumb {
+  background: #775353;
+  border-left: 4px solid #151d3a;
+  border-right: 4px solid #151d3a;
+}
+
+.creatures-description {
+  grid-column: 3;
+}
+
+.creatures-description section {
+  margin-bottom: 60px;
+  max-width: 800px;
+}
+
+.newt h1 {
+  font-family: "Cinzel", serif;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: normal;
+  grid-column: 1 / 4;
+  color: #f5c153;
+}
+
+.newt h1::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 35px;
+  background: #775353;
+  margin-right: 10px;
+}
+
+.newt img {
+  grid-column: 2;
+  margin-top: 20px;
+}
+
+.newt p {
+  grid-column: 3;
+  margin-bottom: 0;
+  letter-spacing: 0.1em;
+}
+
+.footer {
+  grid-column: 1 / 4;
+  z-index: 2;
+  background: #f5c153;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+  font-family: "Cardo", serif;
+  color: #151d3a;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer img {
+  height: 30px;
+  margin-right: 15px;
+}
+
+/* As estrelas foram feitas por Laura Oliveira Pedro*/
+
+.stars2,
+.stars {
+  position: relative;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 15px 15px white, 125px 35px white, 50px 80px white,
+    10px 120px white, 275px 90px white, 230px 10px white, 120px 130px white,
+    300px 130px white, 220px 115px white, 100px 80px white, 80px 120px white,
+    300px 20px white, 250px 130px white, 200px 50px white, 150px 100px white,
+    320px 100px white, 420px 100px white, 520px 100px white, 500px 80px white,
+    580px 120px white, 400px 130px white, 600px 20px white, 700px 20px white,
+    800px 30px white, 820px 50px white, 600px 60px white, 700px 100px white,
+    800px 85px white, 820px 200px white, 880px 60px white, 900px 100px white,
+    1000px 85px white, 1120px 200px white, 880px 88px white, 900px 130px white,
+    1000px 100px white, 1120px 180px white, 1200px 100px white,
+    1222px 20px white, 1095px 50px white, 1400px 88px white, 1450px 130px white,
+    1350px 100px white, 1300px 180px white, 1500px 88px white,
+    1530px 130px white, 1580px 100px white, 1600px 180px white,
+    1615px 20px white, 1650px 44px white, 1700px 100px white, 1750px 200px white,
+    1800px 20px white, 1820px 44px white, 500px 105px white,
+    /*preenchendo da altura*/ 120px 100px white, 80px 350px white,
+    300px 500px white, 255px 455px white, 203px 388px white, 100px 800px white,
+    80px 450px white, 300px 280px white, 250px 444px white, 200px 333px white,
+    150px 666px white, 320px 547px white, 420px 450px white, 520px 288px white,
+    500px 802px white, 580px 498px white, 400px 330px white, 195px 418px white,
+    502px 615px white, 528px 599px white, 588px 580px white, 600px 333px white,
+    430px 395px white, 610px 700px white, 701px 620px white, 800px 380px white,
+    823px 502px white, 615px 603px white, 766px 777px white, 788px 666px white,
+    825px 369px white, 885px 602px white, 910px 236px white, 1100px 647px white,
+    1250px 230px white, 1315px 215px white, 1090px 300px white,
+    1550px 885px white, 1535px 315px white, 1590px 415px white,
+    1650px 380px white, 1625px 225px white, 1844px 222px white,
+    1200px 280px white, 1222px 330px white, 1095px 5020px white,
+    1400px 935px white, 1450px 830px white, 1350px 600px white,
+    1350px 330px white, 1315px 220px white, 1720px 450px white,
+    1553px 885px white, 1333px 410px white, 1222px 415px white,
+    1687px 593px white, 1525px 522px white, 1488px 333px white,
+    1002px 820px white, 1741px 660px white, 1050px 526px white,
+    1437px 910px white, 1452px 835px white, 1553px 613px white,
+    1300px 780px white, 1500px 880px white, 1530px 810px white,
+    1580px 1000px white, 1600px 180px white, 1615px 205px white,
+    1800px 250px white, 1820px 440px white, 1805px 255px white,
+    1825px 453px white, 1835px 511px white, 1820px 500px white,
+    102px 800px white, 130px 610px white, 305px 799px white, 250px 874px white,
+    258px 562px white, 152px 777px white, 328px 900px white, 425px 885px white,
+    529px 710px white, 587px 802px white, 581px 604px white, 1820px 800px white,
+    1805px 755px white, 1825px 900px white, 1835px 811px white,
+    1820px 600px white;
+  animation: anim-stars 12s linear infinite;
+}
+
+.stars2::after,
+.stars::after {
+  content: " ";
+  position: absolute;
+  top: 900px;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 15px 15px white, 125px 35px white, 50px 80px white,
+    10px 120px white, 275px 90px white, 230px 10px white, 120px 130px white,
+    300px 130px white, 220px 115px white, 100px 80px white, 80px 120px white,
+    300px 20px white, 250px 130px white, 200px 50px white, 150px 100px white,
+    320px 100px white, 420px 100px white, 520px 100px white, 500px 80px white,
+    580px 120px white, 400px 130px white, 600px 20px white, 700px 20px white,
+    800px 30px white, 820px 50px white, 600px 60px white, 700px 100px white,
+    800px 85px white, 820px 200px white, 880px 60px white, 900px 100px white,
+    1000px 85px white, 1120px 200px white, 880px 88px white, 900px 130px white,
+    1000px 100px white, 1120px 180px white, 1200px 100px white,
+    1222px 20px white, 1095px 50px white, 1400px 88px white, 1450px 130px white,
+    1350px 100px white, 1300px 180px white, 1500px 88px white,
+    1530px 130px white, 1580px 100px white, 1600px 180px white,
+    1615px 20px white, 1650px 44px white, 1700px 100px white, 1750px 200px white,
+    1800px 20px white, 1820px 44px white, 500px 105px white,
+    /*preenchendo da altura*/ 120px 100px white, 80px 350px white,
+    300px 500px white, 255px 455px white, 203px 388px white, 100px 800px white,
+    80px 450px white, 300px 280px white, 250px 444px white, 200px 333px white,
+    150px 666px white, 320px 547px white, 420px 450px white, 520px 288px white,
+    500px 802px white, 580px 498px white, 400px 330px white, 195px 418px white,
+    502px 615px white, 528px 599px white, 588px 580px white, 600px 333px white,
+    430px 395px white, 610px 700px white, 701px 620px white, 800px 380px white,
+    823px 502px white, 615px 603px white, 766px 777px white, 788px 666px white,
+    825px 369px white, 885px 602px white, 910px 236px white, 1100px 647px white,
+    1250px 230px white, 1315px 215px white, 1090px 300px white,
+    1550px 885px white, 1535px 315px white, 1590px 415px white,
+    1650px 380px white, 1625px 225px white, 1844px 222px white,
+    1200px 280px white, 1222px 330px white, 1095px 5020px white,
+    1400px 935px white, 1450px 830px white, 1350px 600px white,
+    1350px 330px white, 1315px 220px white, 1720px 450px white,
+    1553px 885px white, 1333px 410px white, 1222px 415px white,
+    1687px 593px white, 1525px 522px white, 1488px 333px white,
+    1002px 820px white, 1741px 660px white, 1050px 526px white,
+    1437px 910px white, 1452px 835px white, 1553px 613px white,
+    1300px 780px white, 1500px 880px white, 1530px 810px white,
+    1580px 1000px white, 1600px 180px white, 1615px 205px white,
+    1800px 250px white, 1820px 440px white, 1805px 255px white,
+    1825px 453px white, 1835px 511px white, 1820px 500px white,
+    102px 800px white, 130px 610px white, 305px 799px white, 250px 874px white,
+    258px 562px white, 152px 777px white, 328px 900px white, 425px 885px white,
+    529px 710px white, 587px 802px white, 581px 604px white, 1820px 800px white,
+    1805px 755px white, 1825px 900px white, 1835px 811px white,
+    1820px 600px white;
+}
+
+@keyframes anim-stars {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20vh);
+  }
+}
+
+.stars::after {
+  content: " ";
+  position: absolute;
+  top: 450px;
+}
+
+/* Media Query */
+
+@media (max-width: 700px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  .menu,
+  .creatures,
+  .footer {
+    grid-column: 1;
+  }
+
+  .menu {
+    margin-top: 0px;
+  }
+
+  .menu ul {
+    justify-content: center;
+  }
+
+  .footer {
+    margin-bottom: 0px;
+    font-size: 12px;
+  }
+
+  .footer img {
+    height: 25px;
+    margin-right: 12px;
+  }
+
+  .creatures {
+    grid-template-columns: 110px 1fr;
+    grid-gap: 12px;
+  }
+
+  .creatures h1 {
+    font-size: 3rem;
+  }
+
+  .creatures h2 {
+    font-size: 1.5rem;
+    margin-left: 0px;
+  }
+
+  .creatures p {
+    font-size: 1rem;
+  }
+
+  .creatures-list {
+    grid-column: 1;
+  }
+
+  .creatures-description h2::before {
+    width: 25px;
+    height: 8px;
+    margin-right: 6px;
+  }
+
+  .newt {
+    grid-template-columns: 0px 1fr;
+  }
+
+  .newt img {
+    display: none;
+  }
+
+  .newt p {
+    grid-column: 1;
+  }
+}
+
+/* Interações com Js */
+
+html.zoom p {
+  font-size: 150%;
+}
+
+html.zoom-mobile p {
+  font-size: 120%;
+}
+
+.js-zoom {
+  cursor: pointer;
+}
+
+.js-creatures-description section {
+  display: none;
+}
+
+.js-creatures-description section.active {
+  display: block !important;
+  animation: show 0.5s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
